@@ -14,7 +14,10 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from database
-$sql = "SELECT ryby.nazwa, lowisko.akwen FROM `ryby`, `lowisko` WHERE `styl_zycia` = 1";
+$sql = "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo
+FROM ryby
+JOIN lowisko ON ryby.id=lowisko.Ryby_id
+WHERE lowisko.rodzaj = 3";
 $result = $conn->query($sql);
 
 // Check if there are rows

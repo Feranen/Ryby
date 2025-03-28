@@ -32,7 +32,9 @@
             </div>
         </div>
         <div class="right">
-            <img src="img/ryba1.jpg" alt="Sum">
+            <img src="img/ryba1.jpg" alt="Sum"> 
+            <br>
+            <a href="kwerendy.txt" download>Pobierz Kwerende</a>
         </div>
     </div>
     <div class="footer">
