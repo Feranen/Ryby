@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Query to get predatory fish data or other related data
-$sql = "SELECT `id`, `nazwa`, `wystepowanie` FROM `ryby` WHERE `styl_zycia` = 2";  // Example for predatory fish
+$sql = "SELECT `nazwa`, `wystepowanie` FROM `ryby` WHERE `styl_zycia` = 1";  // Example for predatory fish
 $result = $conn->query($sql);
 
 // Check if there are results
